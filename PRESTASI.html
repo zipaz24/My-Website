@@ -1,0 +1,86 @@
+<html>
+<title>Prestasi XII IPA 2</title>
+<charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://badoystudio.com/cloudme.fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+height: 100%;
+font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+background-position: center;
+background-size: cover;
+background-image: url("/w3images/coffeehouse.jpg");
+min-height: 75%;
+}
+*{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url("bg.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.menu {
+display: none;
+}
+</style>
+<body>
+
+
+<div class="w3-container" id="menu">
+<div class="w3-content" style="max-width:700px">
+
+<h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Prestasi XII IPA 2</span></h5>
+
+<div class="w3-row w3-center w3-card w3-padding">
+<a href="javascript:void(0)" onclick="openMenu(event, 'kelas inspirasi');" id="myLink">
+<p align="justify"><font face="Courier Ne<font face="Courier New" color="white"><div class="w3-col s6 tablink">Prestasi</font></div>
+</a>
+<a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+<p align="justify"><font face="Courier Ne<font face="Courier New" color="white"><div class="w3-col s6 tablink">Prestasi</font></div>
+</a>
+</div>
+
+<div id="kelas inspirasi" class="w3-container menu w3-padding-48 w3-card">
+<h5><center><img src="p1.jpeg" width="500px" height="350px"/></center></h5>
+<p align="justify"><font face="Courier Ne<font face="Courier New" color="white"><p class="w3-text-white"><center>Juara 1 PORSENITAS Bola Futsal</center></p>
+<p>Anggota:</p>
+<p>Dhanny Andhika</p>
+<p>Gerrad Maylano K S</p>
+<p>Reyhan Abid R</p>
+<p>Joko Prasetyo</p>
+<p>Lintang Satya</p>
+</div>
+
+<div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+<h5><center><img src="p2.jpeg" width="500px" height="350px"/></center></h5>
+<p class="w3-text-white"><center>Juara 1 PORSENITAS Gobag Sodor</center></p>
+<p><font face="Courier New" color="white">Anggota:</font></p>
+<p>Agus Prasetyo</p>
+<p>Nafi Fadilla S</p>
+<p>Yudha Al Hadi</p>
+<p>Muhammad Zufryant a</p>
+<p>Sunan Al Huda Hikam</p>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+var i, x, tablinks;
+x = document.getElementsByClassName("menu");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablink");
+for (i = 0; i < x.length; i++) {
+tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+}
+document.getElementById(menuName).style.display = "block";
+evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
